@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xZqloKgzD/MwL6ER7IhcRYMwA7CJFvy4/z9bl5FMm3s=",
+  "Source": "cms-back-end",
+  "BasePath": "_content/cms-back-end",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
