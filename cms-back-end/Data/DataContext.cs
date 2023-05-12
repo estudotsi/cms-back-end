@@ -11,5 +11,6 @@ namespace cms_back_end.Data
 		}
 
 		public DbSet<Category> Categories { get; set; }
+		public DbSet<Post> Posts { get; set; }
 	}
 }

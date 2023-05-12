@@ -5,6 +5,9 @@ C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\cms-back-end.runtimeconfig.json
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\cms-back-end.dll
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\cms-back-end.pdb
+C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\Humanizer.dll
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -40,6 +43,3 @@ C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\obj\Debug\net6.0\
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\obj\Debug\net6.0\cms-back-end.pdb
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\obj\Debug\net6.0\cms-back-end.genruntimeconfig.cache
 C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\obj\Debug\net6.0\ref\cms-back-end.dll
-C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\FluentValidation.dll
-C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
-C:\Users\rogerio.campos\source\repos\cms-back-end\cms-back-end\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
