@@ -4,6 +4,7 @@ using cms_back_end.Validator;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Services.AddDbContext<DataContext>
 	});
 
 builder.Services.AddControllers();
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 builder.Services.AddFluentValidation(config =>
 {
 	config.RegisterValidatorsFromAssembly(typeof(Program).Assembly);

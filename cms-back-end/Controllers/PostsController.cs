@@ -25,7 +25,25 @@ namespace cms_back_end.Controllers
 			return postsForCategories;
 		}
 
-		[HttpPost]
+        [HttpGet]
+        public async Task<ActionResult<List<Post>>> ListAll()
+        {
+            var dto = await _context.Posts.Include(c => c.Category).ToListAsync();
+			return dto;
+        }
+
+        [HttpGet("listForId/{postId}")]
+        public async Task<ActionResult<Post>> ListForId(int postId)
+        {
+			var postForId = await _context.Posts.Include(c => c.Category).Where(x => x.Id == postId).FirstOrDefaultAsync();
+			if(postForId == null)
+			{
+                throw new NotImplementedException("Esse post não existe");
+            }
+            return postForId;
+        }
+
+        [HttpPost]
 		public async Task<ActionResult<List<Post>>> Create([FromBody] CreatePostDto postDto)
 		{
 			var categorie = await _context.Categories.FindAsync(postDto.CategoryId);
@@ -36,6 +54,13 @@ namespace cms_back_end.Controllers
 			var newPost = new Post
 			{
 				Title = postDto.Title,
+				Permalink= postDto.Permalink,
+				PostImaTitle = postDto.PostImaTitle,
+				Excerpt= postDto.Excerpt,
+				isFeatured =postDto.isFeatured,
+				Views = postDto.Views,
+				Status= postDto.Status,
+				CreatedAt= postDto.CreatedAt,
 				Content = postDto.Content,
 				Category = categorie
 			};
@@ -47,4 +72,5 @@ namespace cms_back_end.Controllers
 		}
 	}
 }
+
 
